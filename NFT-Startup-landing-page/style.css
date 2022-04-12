@@ -17,7 +17,7 @@ ul {
   max-width: 1340px;
   margin: 0 auto;
   position: relative;
-  min-width: 400px;
+  min-width: 428px;
 }
 nav .content-wrapper {
   display: flex;
@@ -55,6 +55,7 @@ nav ul {
   padding-top: 50px;
   padding-bottom: 50px;
   font-weight: 900;
+  padding-right: 50px;
 }
 p {
   line-height: 2;
@@ -70,6 +71,7 @@ p {
   border-radius: 30px;
   font-size: 20px;
   margin: 50px;
+  cursor: pointer;
 }
 .image-graphic {
   position: absolute;
@@ -99,4 +101,139 @@ p {
 .press {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.showcase h1 {
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.showcase p {
+  padding-bottom: 30px;
+}
+
+a {
+  color: rgb(39, 38, 38);
+}
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-upsell {
+  position: relative;
+}
+
+.footer-p {
+  color: palevioletred;
+  padding-top: 50px;
+}
+.footer-upsell h1 {
+  font-weight: 900;
+  padding-bottom: 50px;
+}
+.image-footer {
+  position: absolute;
+  left: 70%;
+  bottom: 10%;
+}
+.footer-upsell p {
+  padding-right: 120px;
+}
+
+.footer-logo {
+  display: flex;
+  padding-bottom: 80px;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.footer-about {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 1;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 30px;
+}
+.grey {
+  color: gray;
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 1440px) {
+  nav ul {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .header-button {
+    font-size: 20px;
+  }
+  .content-wrapper {
+    max-width: 1440px;
+  }
+
+  .image-graphic {
+    position: absolute;
+    left: 620px;
+    top: -180px;
+    width: 550px;
+    height: 900px;
+  }
+  .hero {
+    padding-right: 800px;
+    position: relative;
+  }
+  .upsell {
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    margin-top: 80px;
+  }
+  .press {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .showcase {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 90px;
+  }
+  .footer-upsell {
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+  }
+  .footer-upsell p {
+    padding-right: 800px;
+  }
+  .image-footer {
+    position: absolute;
+    right: -600px;
+  }
+  footer .content-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .footer {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer-about {
+    justify-content: flex-end;
+    line-height: 1.5;
+    gap: 40px;
+  }
 }
